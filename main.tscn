@@ -1,0 +1,94 @@
+[gd_scene load_steps=15 format=3 uid="uid://lphx8oopitmr"]
+
+[ext_resource type="Script" path="res://main.gd" id="1_rjdra"]
+[ext_resource type="PackedScene" uid="uid://dmvwdlxjdf2w1" path="res://object/entity/player/player.tscn" id="2_bgh4g"]
+[ext_resource type="PackedScene" uid="uid://ctltchlf2j2r4" path="res://addons/xr-simulator/XRSimulator.tscn" id="2_rcuko"]
+[ext_resource type="Texture2D" uid="uid://cm45iugjy241l" path="res://icon.svg" id="4_1j0t5"]
+[ext_resource type="Texture2D" uid="uid://g3n3vc4rj2i0" path="res://texture/Prototype_Grid_Gray_05-128x128.png" id="6_1t3jn"]
+[ext_resource type="Script" path="res://object/entity/npc/sprite3D.gd" id="6_h8q8o"]
+[ext_resource type="PackedScene" uid="uid://d05tfacux3ukm" path="res://level/level.tscn" id="7_epbrw"]
+[ext_resource type="PackedScene" uid="uid://hmsp031od6ss" path="res://object/weapon/katana.tscn" id="7_hlt42"]
+[ext_resource type="PackedScene" uid="uid://biw1mdrqkimbx" path="res://object/props/cube.tscn" id="8_dbepm"]
+[ext_resource type="PackedScene" uid="uid://tanhqtgwme6w" path="res://object/props/capsule.tscn" id="9_suj6a"]
+[ext_resource type="PackedScene" uid="uid://bdhqfbpfbaql" path="res://object/entity/enemy/enemy.tscn" id="10_wsh2q"]
+
+[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_htwqk"]
+panorama = ExtResource("6_1t3jn")
+
+[sub_resource type="Sky" id="Sky_mntvq"]
+sky_material = SubResource("PanoramaSkyMaterial_htwqk")
+
+[sub_resource type="Environment" id="Environment_2of4n"]
+background_mode = 2
+sky = SubResource("Sky_mntvq")
+glow_enabled = true
+fog_light_color = Color(0.458824, 0.156863, 0.156863, 1)
+fog_density = 0.1349
+fog_aerial_perspective = 0.268
+volumetric_fog_density = 0.887
+volumetric_fog_albedo = Color(1, 0, 0, 1)
+volumetric_fog_emission = Color(0.615686, 0.615686, 0.615686, 1)
+volumetric_fog_emission_energy = 0.0
+volumetric_fog_ambient_inject = 2.25
+
+[node name="Main" type="Node3D"]
+script = ExtResource("1_rjdra")
+
+[node name="XRSimulator" parent="." instance=ExtResource("2_rcuko")]
+xr_origin = NodePath("../PlayerOrigin")
+
+[node name="PlayerOrigin" parent="." instance=ExtResource("2_bgh4g")]
+
+[node name="Sprite3D" type="Sprite3D" parent="." node_paths=PackedStringArray("look_target")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.37839, 1.0252, -2.95186)
+texture = ExtResource("4_1j0t5")
+script = ExtResource("6_h8q8o")
+look_target = NodePath("../PlayerOrigin")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_2of4n")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.857652, 0.51423, 0, -0.51423, 0.857652, 0, 5.73422, 0)
+shadow_enabled = true
+shadow_transmittance_bias = 9.462
+
+[node name="Level" parent="." instance=ExtResource("7_epbrw")]
+enemy_scene = ExtResource("10_wsh2q")
+
+[node name="Cube" parent="." instance=ExtResource("8_dbepm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.62695, 1.10762, 0)
+
+[node name="Cube2" parent="." instance=ExtResource("8_dbepm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.62695, 2.32838, 0)
+
+[node name="Cube3" parent="." instance=ExtResource("8_dbepm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.62695, 1.10762, 1.32424)
+
+[node name="Cube4" parent="." instance=ExtResource("8_dbepm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.62695, 2.32838, 1.32424)
+
+[node name="Capsule" parent="." instance=ExtResource("9_suj6a")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.34142, 1.01698, 4.82395)
+
+[node name="Capsule2" parent="." instance=ExtResource("9_suj6a")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.01518, 1.01698, 4.82395)
+
+[node name="Capsule3" parent="." instance=ExtResource("9_suj6a")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.69965, 1.01698, 4.82395)
+
+[node name="Cube5" parent="." instance=ExtResource("8_dbepm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.88858, 0.906104, 4.5594)
+axis_lock_linear_x = true
+axis_lock_linear_y = true
+axis_lock_linear_z = true
+
+[node name="SpotLight3D" type="SpotLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 13.9826, 0)
+spot_range = 25.543
+
+[node name="Katana" parent="." instance=ExtResource("7_hlt42")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0381355, 1.17556, 4.78915)
+
+[editable path="Katana"]
+[editable path="Katana/katana"]

@@ -1,0 +1,195 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="org.godotengine.xrtest"
+4    android:installLocation="auto"
+5    android:versionCode="1"
+6    android:versionName="1.0" >
+7
+8    <uses-sdk
+9        android:minSdkVersion="24"
+10        android:targetSdkVersion="33" />
+11
+12    <supports-screens
+12-->/home/wickidie/MEGA/MEGAsync/Godot/GodotProject/4.x/XR test/android/build/AndroidManifest.xml:9:5-13:40
+13        android:largeScreens="true"
+13-->/home/wickidie/MEGA/MEGAsync/Godot/GodotProject/4.x/XR test/android/build/AndroidManifest.xml:12:9-36
+14        android:normalScreens="true"
+14-->/home/wickidie/MEGA/MEGAsync/Godot/GodotProject/4.x/XR test/android/build/AndroidManifest.xml:11:9-37
+15        android:smallScreens="true"
+15-->/home/wickidie/MEGA/MEGAsync/Godot/GodotProject/4.x/XR test/android/build/AndroidManifest.xml:10:9-36
+16        android:xlargeScreens="true" />
+16-->/home/wickidie/MEGA/MEGAsync/Godot/GodotProject/4.x/XR test/android/build/AndroidManifest.xml:13:9-37
+17
+18    <uses-feature
+18-->/home/wickidie/MEGA/MEGAsync/Godot/GodotProject/4.x/XR test/android/build/AndroidManifest.xml:15:5-17:35
+19        android:glEsVersion="0x00030000"
+19-->/home/wickidie/MEGA/MEGAsync/Godot/GodotProject/4.x/XR test/android/build/AndroidManifest.xml:16:9-41
+20        android:required="true" />
+20-->/home/wickidie/MEGA/MEGAsync/Godot/GodotProject/4.x/XR test/android/build/AndroidManifest.xml:17:9-32
+21
+22    <uses-permission android:name="android.permission.INTERNET" />
+22-->/home/wickidie/MEGA/MEGAsync/Godot/GodotProject/4.x/XR test/android/build/src/debug/AndroidManifest.xml:11:5-67
+22-->/home/wickidie/MEGA/MEGAsync/Godot/GodotProject/4.x/XR test/android/build/src/debug/AndroidManifest.xml:11:22-64
+23
+24    <uses-feature
+24-->/home/wickidie/MEGA/MEGAsync/Godot/GodotProject/4.x/XR test/android/build/src/debug/AndroidManifest.xml:12:5-132
+25        android:name="android.hardware.vulkan.level"
+25-->/home/wickidie/MEGA/MEGAsync/Godot/GodotProject/4.x/XR test/android/build/src/debug/AndroidManifest.xml:12:40-84
+26        android:required="false"
+26-->/home/wickidie/MEGA/MEGAsync/Godot/GodotProject/4.x/XR test/android/build/src/debug/AndroidManifest.xml:12:85-109
+27        android:version="1" />
+27-->/home/wickidie/MEGA/MEGAsync/Godot/GodotProject/4.x/XR test/android/build/src/debug/AndroidManifest.xml:12:110-129
+28    <uses-feature
+28-->/home/wickidie/MEGA/MEGAsync/Godot/GodotProject/4.x/XR test/android/build/src/debug/AndroidManifest.xml:13:5-140
+29        android:name="android.hardware.vulkan.version"
+29-->/home/wickidie/MEGA/MEGAsync/Godot/GodotProject/4.x/XR test/android/build/src/debug/AndroidManifest.xml:13:40-86
+30        android:required="true"
+30-->/home/wickidie/MEGA/MEGAsync/Godot/GodotProject/4.x/XR test/android/build/src/debug/AndroidManifest.xml:13:87-110
+31        android:version="0x400003" />
+31-->/home/wickidie/MEGA/MEGAsync/Godot/GodotProject/4.x/XR test/android/build/src/debug/AndroidManifest.xml:13:111-137
+32    <uses-feature
+32-->[godotopenxrmeta-debug.aar] /home/wickidie/.gradle/caches/transforms-3/e5069eafbf6230d44792fd5a41f0620e/transformed/jetified-godotopenxrmeta-debug/AndroidManifest.xml:9:5-12:31
+33        android:name="android.hardware.vr.headtracking"
+33-->[godotopenxrmeta-debug.aar] /home/wickidie/.gradle/caches/transforms-3/e5069eafbf6230d44792fd5a41f0620e/transformed/jetified-godotopenxrmeta-debug/AndroidManifest.xml:10:9-56
+34        android:required="true"
+34-->[godotopenxrmeta-debug.aar] /home/wickidie/.gradle/caches/transforms-3/e5069eafbf6230d44792fd5a41f0620e/transformed/jetified-godotopenxrmeta-debug/AndroidManifest.xml:11:9-32
+35        android:version="1" />
+35-->[godotopenxrmeta-debug.aar] /home/wickidie/.gradle/caches/transforms-3/e5069eafbf6230d44792fd5a41f0620e/transformed/jetified-godotopenxrmeta-debug/AndroidManifest.xml:12:9-28
+36
+37    <application
+37-->/home/wickidie/MEGA/MEGAsync/Godot/GodotProject/4.x/XR test/android/build/AndroidManifest.xml:19:5-52:19
+38        android:allowBackup="false"
+38-->/home/wickidie/MEGA/MEGAsync/Godot/GodotProject/4.x/XR test/android/build/AndroidManifest.xml:21:9-36
+39        android:appCategory="game"
+39-->/home/wickidie/MEGA/MEGAsync/Godot/GodotProject/4.x/XR test/android/build/AndroidManifest.xml:23:9-35
+40        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+40-->[androidx.core:core:1.2.0] /home/wickidie/.gradle/caches/transforms-3/9bcb1a65f5938aad264f4d73e9a06f28/transformed/core-1.2.0/AndroidManifest.xml:24:18-86
+41        android:debuggable="true"
+42        android:extractNativeLibs="false"
+43        android:hasFragileUserData="false"
+43-->/home/wickidie/MEGA/MEGAsync/Godot/GodotProject/4.x/XR test/android/build/AndroidManifest.xml:25:9-43
+44        android:icon="@mipmap/icon"
+44-->/home/wickidie/MEGA/MEGAsync/Godot/GodotProject/4.x/XR test/android/build/AndroidManifest.xml:22:9-36
+45        android:isGame="true"
+45-->/home/wickidie/MEGA/MEGAsync/Godot/GodotProject/4.x/XR test/android/build/AndroidManifest.xml:24:9-30
+46        android:label="@string/godot_project_name_string"
+46-->/home/wickidie/MEGA/MEGAsync/Godot/GodotProject/4.x/XR test/android/build/AndroidManifest.xml:20:9-58
+47        android:requestLegacyExternalStorage="false" >
+47-->/home/wickidie/MEGA/MEGAsync/Godot/GodotProject/4.x/XR test/android/build/AndroidManifest.xml:26:9-53
+48        <activity
+48-->/home/wickidie/MEGA/MEGAsync/Godot/GodotProject/4.x/XR test/android/build/AndroidManifest.xml:34:9-50:20
+49            android:name="com.godot.game.GodotApp"
+49-->/home/wickidie/MEGA/MEGAsync/Godot/GodotProject/4.x/XR test/android/build/AndroidManifest.xml:35:13-37
+50            android:configChanges="orientation|keyboardHidden|screenSize|smallestScreenSize|density|keyboard|navigation|screenLayout|uiMode"
+50-->/home/wickidie/MEGA/MEGAsync/Godot/GodotProject/4.x/XR test/android/build/AndroidManifest.xml:42:13-141
+51            android:excludeFromRecents="false"
+51-->/home/wickidie/MEGA/MEGAsync/Godot/GodotProject/4.x/XR test/android/build/AndroidManifest.xml:39:13-47
+52            android:exported="true"
+52-->/home/wickidie/MEGA/MEGAsync/Godot/GodotProject/4.x/XR test/android/build/AndroidManifest.xml:40:13-36
+53            android:label="@string/godot_project_name_string"
+53-->/home/wickidie/MEGA/MEGAsync/Godot/GodotProject/4.x/XR test/android/build/AndroidManifest.xml:36:13-62
+54            android:launchMode="singleInstance"
+54-->/home/wickidie/MEGA/MEGAsync/Godot/GodotProject/4.x/XR test/android/build/AndroidManifest.xml:38:13-48
+55            android:resizeableActivity="true"
+55-->/home/wickidie/MEGA/MEGAsync/Godot/GodotProject/4.x/XR test/android/build/AndroidManifest.xml:43:13-47
+56            android:screenOrientation="landscape"
+56-->/home/wickidie/MEGA/MEGAsync/Godot/GodotProject/4.x/XR test/android/build/AndroidManifest.xml:41:13-50
+57            android:theme="@style/GodotAppSplashTheme" >
+57-->/home/wickidie/MEGA/MEGAsync/Godot/GodotProject/4.x/XR test/android/build/AndroidManifest.xml:37:13-55
+58            <intent-filter>
+58-->/home/wickidie/MEGA/MEGAsync/Godot/GodotProject/4.x/XR test/android/build/src/debug/AndroidManifest.xml:25:13-39:29
+59                <action android:name="android.intent.action.MAIN" />
+59-->/home/wickidie/MEGA/MEGAsync/Godot/GodotProject/4.x/XR test/android/build/AndroidManifest.xml:47:17-69
+59-->/home/wickidie/MEGA/MEGAsync/Godot/GodotProject/4.x/XR test/android/build/AndroidManifest.xml:47:25-66
+60
+61                <category android:name="android.intent.category.LAUNCHER" />
+61-->/home/wickidie/MEGA/MEGAsync/Godot/GodotProject/4.x/XR test/android/build/AndroidManifest.xml:48:17-77
+61-->/home/wickidie/MEGA/MEGAsync/Godot/GodotProject/4.x/XR test/android/build/AndroidManifest.xml:48:27-74
+62
+63                <!--
+64                Enable access to OpenXR on Oculus mobile devices, no-op on other Android
+65                platforms.
+66                -->
+67                <category android:name="com.oculus.intent.category.VR" />
+67-->/home/wickidie/MEGA/MEGAsync/Godot/GodotProject/4.x/XR test/android/build/src/debug/AndroidManifest.xml:31:17-74
+67-->/home/wickidie/MEGA/MEGAsync/Godot/GodotProject/4.x/XR test/android/build/src/debug/AndroidManifest.xml:31:27-71
+68
+69                <!--
+70                OpenXR category tag to indicate the activity starts in an immersive OpenXR mode. 
+71                See https://registry.khronos.org/OpenXR/specs/1.0/html/xrspec.html#android-runtime-category.
+72                -->
+73                <category android:name="org.khronos.openxr.intent.category.IMMERSIVE_HMD" />
+73-->/home/wickidie/MEGA/MEGAsync/Godot/GodotProject/4.x/XR test/android/build/src/debug/AndroidManifest.xml:35:17-93
+73-->/home/wickidie/MEGA/MEGAsync/Godot/GodotProject/4.x/XR test/android/build/src/debug/AndroidManifest.xml:35:27-90
+74
+75                <!-- Enable VR access on HTC Vive Focus devices. -->
+76                <category android:name="com.htc.intent.category.VRAPP" />
+76-->/home/wickidie/MEGA/MEGAsync/Godot/GodotProject/4.x/XR test/android/build/src/debug/AndroidManifest.xml:38:17-74
+76-->/home/wickidie/MEGA/MEGAsync/Godot/GodotProject/4.x/XR test/android/build/src/debug/AndroidManifest.xml:38:27-71
+77            </intent-filter>
+78        </activity>
+79        <!-- Records the version of the Godot editor used for building -->
+80        <meta-data
+81            android:name="org.godotengine.editor.version"
+82            android:value="4.1.1.stable" /> <!-- Records the version of the Godot library -->
+83        <meta-data
+83-->[godot-lib.template_debug.aar] /home/wickidie/.gradle/caches/transforms-3/9c5a10b9f0de0fbc7e522ed48f82044b/transformed/jetified-godot-lib.template_debug/AndroidManifest.xml:14:9-16:44
+84            android:name="org.godotengine.library.version"
+84-->[godot-lib.template_debug.aar] /home/wickidie/.gradle/caches/transforms-3/9c5a10b9f0de0fbc7e522ed48f82044b/transformed/jetified-godot-lib.template_debug/AndroidManifest.xml:15:13-59
+85            android:value="4.1.1.stable" />
+85-->[godot-lib.template_debug.aar] /home/wickidie/.gradle/caches/transforms-3/9c5a10b9f0de0fbc7e522ed48f82044b/transformed/jetified-godot-lib.template_debug/AndroidManifest.xml:16:13-41
+86
+87        <service android:name="org.godotengine.godot.GodotDownloaderService" />
+87-->[godot-lib.template_debug.aar] /home/wickidie/.gradle/caches/transforms-3/9c5a10b9f0de0fbc7e522ed48f82044b/transformed/jetified-godot-lib.template_debug/AndroidManifest.xml:18:9-80
+87-->[godot-lib.template_debug.aar] /home/wickidie/.gradle/caches/transforms-3/9c5a10b9f0de0fbc7e522ed48f82044b/transformed/jetified-godot-lib.template_debug/AndroidManifest.xml:18:18-77
+88
+89        <activity
+89-->[godot-lib.template_debug.aar] /home/wickidie/.gradle/caches/transforms-3/9c5a10b9f0de0fbc7e522ed48f82044b/transformed/jetified-godot-lib.template_debug/AndroidManifest.xml:20:9-24:75
+90            android:name="org.godotengine.godot.utils.ProcessPhoenix"
+90-->[godot-lib.template_debug.aar] /home/wickidie/.gradle/caches/transforms-3/9c5a10b9f0de0fbc7e522ed48f82044b/transformed/jetified-godot-lib.template_debug/AndroidManifest.xml:21:13-70
+91            android:exported="false"
+91-->[godot-lib.template_debug.aar] /home/wickidie/.gradle/caches/transforms-3/9c5a10b9f0de0fbc7e522ed48f82044b/transformed/jetified-godot-lib.template_debug/AndroidManifest.xml:22:13-37
+92            android:process=":phoenix"
+92-->[godot-lib.template_debug.aar] /home/wickidie/.gradle/caches/transforms-3/9c5a10b9f0de0fbc7e522ed48f82044b/transformed/jetified-godot-lib.template_debug/AndroidManifest.xml:23:13-39
+93            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+93-->[godot-lib.template_debug.aar] /home/wickidie/.gradle/caches/transforms-3/9c5a10b9f0de0fbc7e522ed48f82044b/transformed/jetified-godot-lib.template_debug/AndroidManifest.xml:24:13-72
+94
+95        <provider
+95-->[godot-lib.template_debug.aar] /home/wickidie/.gradle/caches/transforms-3/9c5a10b9f0de0fbc7e522ed48f82044b/transformed/jetified-godot-lib.template_debug/AndroidManifest.xml:26:9-34:20
+96            android:name="androidx.core.content.FileProvider"
+96-->[godot-lib.template_debug.aar] /home/wickidie/.gradle/caches/transforms-3/9c5a10b9f0de0fbc7e522ed48f82044b/transformed/jetified-godot-lib.template_debug/AndroidManifest.xml:27:13-62
+97            android:authorities="org.godotengine.xrtest.fileprovider"
+97-->[godot-lib.template_debug.aar] /home/wickidie/.gradle/caches/transforms-3/9c5a10b9f0de0fbc7e522ed48f82044b/transformed/jetified-godot-lib.template_debug/AndroidManifest.xml:28:13-64
+98            android:exported="false"
+98-->[godot-lib.template_debug.aar] /home/wickidie/.gradle/caches/transforms-3/9c5a10b9f0de0fbc7e522ed48f82044b/transformed/jetified-godot-lib.template_debug/AndroidManifest.xml:29:13-37
+99            android:grantUriPermissions="true" >
+99-->[godot-lib.template_debug.aar] /home/wickidie/.gradle/caches/transforms-3/9c5a10b9f0de0fbc7e522ed48f82044b/transformed/jetified-godot-lib.template_debug/AndroidManifest.xml:30:13-47
+100            <meta-data
+100-->[godot-lib.template_debug.aar] /home/wickidie/.gradle/caches/transforms-3/9c5a10b9f0de0fbc7e522ed48f82044b/transformed/jetified-godot-lib.template_debug/AndroidManifest.xml:31:13-33:64
+101                android:name="android.support.FILE_PROVIDER_PATHS"
+101-->[godot-lib.template_debug.aar] /home/wickidie/.gradle/caches/transforms-3/9c5a10b9f0de0fbc7e522ed48f82044b/transformed/jetified-godot-lib.template_debug/AndroidManifest.xml:32:17-67
+102                android:resource="@xml/godot_provider_paths" />
+102-->[godot-lib.template_debug.aar] /home/wickidie/.gradle/caches/transforms-3/9c5a10b9f0de0fbc7e522ed48f82044b/transformed/jetified-godot-lib.template_debug/AndroidManifest.xml:33:17-61
+103        </provider>
+104
+105        <meta-data
+105-->[godotopenxrmeta-debug.aar] /home/wickidie/.gradle/caches/transforms-3/e5069eafbf6230d44792fd5a41f0620e/transformed/jetified-godotopenxrmeta-debug/AndroidManifest.xml:15:9-17:82
+106            android:name="org.godotengine.plugin.v1.GodotOpenXRMeta"
+106-->[godotopenxrmeta-debug.aar] /home/wickidie/.gradle/caches/transforms-3/e5069eafbf6230d44792fd5a41f0620e/transformed/jetified-godotopenxrmeta-debug/AndroidManifest.xml:16:13-69
+107            android:value="org.godotengine.openxrloaders.meta.GodotOpenXRMeta" />
+107-->[godotopenxrmeta-debug.aar] /home/wickidie/.gradle/caches/transforms-3/e5069eafbf6230d44792fd5a41f0620e/transformed/jetified-godotopenxrmeta-debug/AndroidManifest.xml:17:13-79
+108        <meta-data
+108-->[godotopenxrmeta-debug.aar] /home/wickidie/.gradle/caches/transforms-3/e5069eafbf6230d44792fd5a41f0620e/transformed/jetified-godotopenxrmeta-debug/AndroidManifest.xml:18:9-20:53
+109            android:name="com.oculus.supportedDevices"
+109-->[godotopenxrmeta-debug.aar] /home/wickidie/.gradle/caches/transforms-3/e5069eafbf6230d44792fd5a41f0620e/transformed/jetified-godotopenxrmeta-debug/AndroidManifest.xml:19:13-55
+110            android:value="quest|quest2|questpro" />
+110-->[godotopenxrmeta-debug.aar] /home/wickidie/.gradle/caches/transforms-3/e5069eafbf6230d44792fd5a41f0620e/transformed/jetified-godotopenxrmeta-debug/AndroidManifest.xml:20:13-50
+111        <meta-data
+111-->[godotopenxrmeta-debug.aar] /home/wickidie/.gradle/caches/transforms-3/e5069eafbf6230d44792fd5a41f0620e/transformed/jetified-godotopenxrmeta-debug/AndroidManifest.xml:21:9-23:36
+112            android:name="com.oculus.vr.focusaware"
+112-->[godotopenxrmeta-debug.aar] /home/wickidie/.gradle/caches/transforms-3/e5069eafbf6230d44792fd5a41f0620e/transformed/jetified-godotopenxrmeta-debug/AndroidManifest.xml:22:13-52
+113            android:value="true" />
+113-->[godotopenxrmeta-debug.aar] /home/wickidie/.gradle/caches/transforms-3/e5069eafbf6230d44792fd5a41f0620e/transformed/jetified-godotopenxrmeta-debug/AndroidManifest.xml:23:13-33
+114    </application>
+115
+116</manifest>
